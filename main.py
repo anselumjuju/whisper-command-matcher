@@ -9,11 +9,13 @@ app = FastAPI(title="Voice Command Backend")
 # -----------------------------
 # Load Whisper model (CPU)
 # -----------------------------
+print("Loading model...")
 model = WhisperModel(
     "small",
     device="cpu",
     compute_type="int8"
 )
+print("Model loaded")
 
 # -----------------------------
 # Action detection logic
