@@ -1,5 +1,3 @@
-from glob import translate
-
 from fastapi import FastAPI, UploadFile, File, Query
 from faster_whisper import WhisperModel
 import tempfile
